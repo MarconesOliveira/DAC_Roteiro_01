@@ -1,0 +1,20 @@
+{{#if (isOwnProfile currentUser user)}}
+    <div class="d-flex flex-row-reverse mt-5">
+        <a href="/delete" class="btn btn-outline-danger mx-5">Excluir perfil</a>
+        <a href="/edit" class="btn btn-outline-primary">Atualize seu perfil</a>
+    </div>
+{{/if}}
+
+<div class="card shadow-lg my-3 p-2">
+    <div class="card-body">
+        <div class="card-title">
+        <h1>{{getName user}}</h1>
+        </div>
+        <div class="card-text">
+        {{#if (getBio user)}}
+            <h2 class="lead">{{getBio user}}</h2>
+        {{/if}}
+            <p class="text-muted">Cadastrou-se em {{getCreatedAt user}}</p>
+        </div>
+    </div>
+</div>

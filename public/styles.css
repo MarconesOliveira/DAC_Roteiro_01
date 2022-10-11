@@ -1,0 +1,9 @@
+html, body {
+    background-color: white;
+    padding: 20px;
+}
+
+.navbar {
+    box-shadow: 0px 0px 50px rgb(218, 145, 157);
+    border-radius: 20px;
+}
